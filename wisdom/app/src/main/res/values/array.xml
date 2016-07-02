@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="course_names">
+        <item>颜色配对</item>
+        <item>按规律排序</item>
+        <item>归类</item>
+        <item>相同和不同</item>
+        <item>比较大小</item>
+        <item>比较长短</item>
+    </string-array>
+    <string-array name="course_subject">
+        <item>全部</item>
+        <item>逻辑数学</item>
+        <item>艺术创想</item>
+        <item>情景英语</item>
+        <item>阶梯阅读</item>
+        <item>安全礼仪</item>
+        <item>魔力猴区角</item>
+        <item>奥尔夫音乐</item>
+    </string-array>
+    <string-array name="course_clazz">
+        <item>全部</item>
+        <item>小一</item>
+        <item>小二</item>
+        <item>中一</item>
+        <item>中二</item>
+        <item>大一</item>
+        <item>大二</item>
+    </string-array>
+    <string-array name="course_periods">
+        <item>全部</item>
+        <item>第一期</item>
+        <item>第二期</item>
+        <item>第三期</item>
+        <item>第四期</item>
+    </string-array>
+</resources>

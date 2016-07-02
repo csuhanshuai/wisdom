@@ -1,0 +1,193 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.cnst.wisdom.ui.activity.TeachPlan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/width_40"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_15"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/width_50"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="@string/teach_subject"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/teach_plan_clazz_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_56"
+        android:background="@drawable/button_selector_gray"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/width_42"
+            android:layout_height="@dimen/width_42"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_10"
+            android:src="@mipmap/subject"/>
+
+        <TextView
+            android:id="@+id/teach_plan_clazz"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/atten_class"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/text_16"/>
+
+        <ImageView
+            android:layout_width="@dimen/width_40"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_15"
+            android:src="@mipmap/nextarrow"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline_gray"/>
+
+    <LinearLayout
+        android:id="@+id/teach_plan_subject_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_56"
+        android:background="@drawable/button_selector_gray"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/width_42"
+            android:layout_height="@dimen/width_42"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_10"
+            android:src="@mipmap/subject"/>
+
+        <TextView
+            android:id="@+id/teach_plan_subject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/subject"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/text_16"/>
+
+        <ImageView
+            android:layout_width="@dimen/width_40"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_15"
+            android:src="@mipmap/nextarrow"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline_gray"/>
+
+    <LinearLayout
+        android:id="@+id/teach_plan_periods_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_56"
+        android:background="@drawable/button_selector_gray"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/width_42"
+            android:layout_height="@dimen/width_42"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_10"
+            android:src="@mipmap/periods"/>
+
+        <TextView
+            android:id="@+id/teach_plan_term"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/term"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/text_16"/>
+
+        <ImageView
+            android:layout_width="@dimen/width_40"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_15"
+            android:src="@mipmap/nextarrow"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline_gray"/>
+
+    <LinearLayout
+        android:id="@+id/teach_plan_cycle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_56"
+        android:background="@drawable/button_selector_gray"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/width_42"
+            android:layout_height="@dimen/width_42"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_10"
+            android:src="@mipmap/teach_cycle"/>
+
+        <TextView
+            android:id="@+id/teach_plan_cycle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/teach_cycle"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/text_16"/>
+
+        <ImageView
+            android:layout_width="@dimen/width_40"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_15"
+            android:src="@mipmap/nextarrow"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline_gray"/>
+
+    <TextView
+        android:id="@+id/teach_plan_confirm"
+        android:layout_width="@dimen/width_200"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_40"
+        android:background="@drawable/bg_button"
+        android:padding="@dimen/padding_10"
+        android:text="@string/confirm"
+        android:textColor="@color/tip_text"/>
+</LinearLayout>

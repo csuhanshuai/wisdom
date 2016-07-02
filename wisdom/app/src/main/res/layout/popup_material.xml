@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/pop_bg"
+              android:gravity="center">
+
+    <TextView
+        android:id="@+id/pop_item_search"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        android:clickable="true"
+        android:padding="2dp"
+        android:textColor="#99000000"
+        android:background="@drawable/popup_item_selector"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#99000000"/>
+
+    <TextView
+        android:id="@+id/pop_item_download"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/popup_item_selector"
+        android:text="下载管理"
+        android:padding="2dp"
+        android:textColor="#99000000"
+        android:textSize="14sp"/>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/marging_8">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            style="@style/radio"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_msg_bg"
+            android:text="@string/btn_msg" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            style="@style/radio"
+            android:drawableTop="@drawable/tab_dynamic_bg"
+            android:text="@string/btn_dynamic" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            style="@style/radio"
+            android:drawableTop="@drawable/tab_teach_bg"
+            android:text="@string/btn_teach" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            style="@style/radio"
+            android:drawableTop="@drawable/tab_me_bg"
+            android:text="@string/btn_me" />
+    </RadioGroup>
+
+</LinearLayout>

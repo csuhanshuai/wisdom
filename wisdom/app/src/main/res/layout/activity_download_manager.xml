@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cnst.wisdom.ui.activity.Material">
+
+    <!-- 标题部分 -->
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headHeight"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/title_size"
+            android:textColor="@android:color/white"
+            android:text="下载管理"/>
+
+        <FrameLayout
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:background="@drawable/material_head_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/head_more_dm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:layout_centerVertical="true"
+                android:background="@drawable/more"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:background="@drawable/material_head_selector">
+
+            <ImageButton
+                android:id="@+id/head_back_dm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:scaleType="center"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back"/>
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <!-- 内容区域 -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- tabs -->
+
+        <com.cnst.wisdom.ui.widget.PagerSlidingTabStrip
+            android:id="@+id/dm_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <!-- viewpager -->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/dm_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

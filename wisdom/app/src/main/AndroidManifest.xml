@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cnst.wisdom" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 优酷播放 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" / -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/> -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon" >
+        <activity android:name=".ui.activity.WelcomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.MainActivity" />
+
+        <!-- &lt;!&ndash; 渠道 &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="${UMENG_CHANNEL_VALUE}"/> -->
+        <activity
+            android:name=".ui.activity.TeachPlan"
+            android:label="@string/title_activity_teach_plan"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.activity.Guidance" />
+        <activity
+            android:name=".ui.activity.GuidanceDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.activity.LearnDetail" />
+        <activity android:name=".ui.activity.OnlineLearn" >
+        </activity>
+        <activity android:name=".ui.activity.Material" />
+        <activity android:name=".ui.activity.Attendance" />
+        <activity android:name=".ui.activity.HealthManage" />
+        <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <activity android:name=".ui.activity.Feedback" />
+        <activity android:name=".ui.activity.TeachPlanProgress" />
+        <activity android:name=".ui.activity.TeachPlanMod" />
+        <activity android:name=".ui.activity.TeachPlanCourse" />
+        <activity android:name=".ui.activity.DownloadManager" />
+
+        <!-- 以下两个为下载时需要的添加的Service -->
+        <service
+            android:name="com.youku.service.download.DownloadService"
+            android:label="Youku Download Service"
+            android:process=":download" >
+
+            <!-- <intent-filter android:priority="1000" > -->
+            <!-- </intent-filter> -->
+        </service>
+        <service
+            android:name="com.youku.service.acc.AcceleraterService"
+            android:process=":accelerater" >
+
+            <!-- <intent-filter android:priority="1000" > -->
+            <!-- </intent-filter> -->
+        </service>
+
+        <!-- client_id及client_secret配置  这里需要切换为自己的id和secret -->
+        <meta-data
+            android:name="client_id"
+            android:value="792b1d08a5348d0d" />
+        <meta-data
+            android:name="client_secret"
+            android:value="9a98ce3841ae9f686fbea940a93b8167" />
+
+        <activity android:name=".ui.activity.Guidance1" >
+        </activity>
+        <activity android:name=".ui.activity.GuidanceSearch" >
+        </activity>
+    </application>
+
+</manifest>

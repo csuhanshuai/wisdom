@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cnst.wisdom.ui.activity.GuidanceDetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.youku.player.base.YoukuPlayerView
+            android:id="@+id/player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.youku.player.base.YoukuPlayerView>
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_courseinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="逻辑数学 第一期 颜色配对"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_courseinfo"
+            android:layout_marginTop="10dp"
+            android:text="简介：提升教师的教育技术能力，是实现成功教育的关键。本文分别从六个方面阐述了如何提升教师的教育技术能力。"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/select_btn"
+            android:text="下载"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#50666666" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="相关素材"
+        android:textColor="@color/colorPrimary" />
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cnst.wisdom.ui.activity.RegisterActivity">
+
+    <include
+        layout="@layout/head_back"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText_phone"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/marging_8"
+            android:layout_weight="7"
+            android:background="@drawable/login_input_border"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:padding="@dimen/margin_10"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/login_text"/>
+
+        <TextView
+            android:id="@+id/textView_getCode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_weight="3"
+            android:background="@drawable/register_button"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/login_text"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText_code"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="@dimen/marging_8"
+        android:background="@drawable/login_input_border"
+        android:enabled="false"
+        android:hint="请输入验证码"
+        android:maxLength="6"
+        android:padding="@dimen/margin_10"
+        android:textColor="@color/normal_text"
+        android:textSize="@dimen/login_text"/>
+
+    <TextView
+        android:id="@+id/textView_submit"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@drawable/button_common"
+        android:gravity="center"
+        android:text="绑定"
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
+</LinearLayout>

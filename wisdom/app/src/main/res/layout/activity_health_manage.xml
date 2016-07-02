@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cnst.wisdom.ui.activity.Attendance">
+
+    <include
+        layout="@layout/head_back"></include>
+
+    <RadioGroup
+        android:id="@+id/rg_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headHeight"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_today"
+            style="@style/attendance_tab"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_today"
+            android:text="@string/chioce_today"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_yestoday"
+            style="@style/attendance_tab"
+            android:drawableTop="@drawable/tab_yest"
+            android:text="@string/chioce_yestoday"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_calendar"
+            style="@style/attendance_tab"
+            android:drawableTop="@drawable/tab_calendar"
+            android:text="@string/chioce_calendar"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/vp_attendance"
+            android:layout_width="fill_parent"
+            android:scrollbars="none"
+            android:layout_height="fill_parent">
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

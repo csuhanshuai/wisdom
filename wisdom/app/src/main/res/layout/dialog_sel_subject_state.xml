@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/padding_20"
+        android:paddingTop="@dimen/padding_20"
+        android:text="还原该单元为教学"
+        android:gravity="center"
+        android:textColor="@color/normal_text"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline_gray"/>
+
+    <LinearLayout
+        android:paddingTop="@dimen/padding_1"
+        android:id="@+id/dialog_sel_rg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40">
+        <Button
+            android:id="@+id/cancel"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:textColor="@color/normal_text"
+            android:text="@string/cancel"
+            android:layout_width="0dp"
+            android:background="@drawable/button_selector_left"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/underline_gray"/>
+        <Button
+            android:id="@+id/confirm"
+            android:background="@drawable/button_selector_right"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:textColor="@color/normal_text"
+            android:text="@string/confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

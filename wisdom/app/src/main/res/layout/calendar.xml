@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/month_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animationCache="true"
+            android:background="@null"
+            android:drawablePadding="@dimen/padding_10"
+            android:text="2016年1月"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/today"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/padding_10"
+            android:text="@string/today"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_18"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#ffffffff">
+
+        <TextView
+            style="@style/weekName"
+            android:text="日"
+            android:textColor="#177ed6"/>
+
+        <TextView
+            style="@style/weekName"
+            android:text="一"/>
+
+        <TextView
+            style="@style/weekName"
+            android:text="二"/>
+
+        <TextView
+            style="@style/weekName"
+            android:text="三"/>
+
+        <TextView
+            style="@style/weekName"
+            android:text="四"/>
+
+        <TextView
+            style="@style/weekName"
+            android:text="五"/>
+
+        <TextView
+            style="@style/weekName"
+            android:text="六"
+            android:textColor="#177ed6"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/margin_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/underline_gray"/>
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2E2E2"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_sel_rg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_1">
+
+        <Button
+            android:id="@+id/calendar_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_green"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="@string/cancel"
+            android:textColor="@color/normal_text"/>
+
+        <View
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:background="@color/underline_gray"
+            android:layout_width="@dimen/width_1"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/calendar_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_green"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:text="@string/confirm"
+            android:textColor="@color/normal_text"/>
+    </LinearLayout>
+
+</LinearLayout>

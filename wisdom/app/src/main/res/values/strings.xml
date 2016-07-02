@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">wisdom</string>
+    <string name="rec_more">More</string>
+    <string name="btn_msg">消息</string>
+    <string name="btn_dynamic">动态</string>
+    <string name="btn_teach">教学</string>
+    <string name="btn_me">我</string>
+    <string name="title_activity_teach_plan">教学计划</string>
+    <string name="chioce_today">(x)</string>
+    <string name="chioce_yestoday">(x)</string>
+    <string name="chioce_calendar">(x)</string>
+    <string name="login">登录</string>
+    <string name="user_input">用户名/手机号</string>
+    <string name="pwd_input">请输入密码</string>
+    <string name="autologin">自动登录</string>
+    <string name="forgetPassword">忘记密码？</string>
+    <string name="gridv_atten">出勤</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="subject">学科</string>
+    <string name="term">期数</string>
+    <string name="teach_cycle">教学周期</string>
+    <string name="teach_subject">教学科目</string>
+    <string name="teach_progress">教学进度</string>
+    <string name="mof_plan">修改计划</string>
+
+    <string name="sunday">日</string>
+    <string name="monday">一</string>
+    <string name="thesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="complete">已完成</string>
+    <string name="un_complete">未完成</string>
+    <string name="change_un_complete">还原为未教学？</string>
+    <string name="change_complete">已完成本单元教学？</string>
+    <string name="mof">修改</string>
+    <string name="more">更多</string>
+    <string name="today">今天</string>
+    <string name="ple_sel_date">请选择日期</string>
+    <string name="ple_sel_end_date">请选择截止日期</string>
+    <string name="atten_class">班级</string>
+    <string name="atten">考勤管理</string>
+    <string name="no_data">no_data</string>
+    <string-array name="attenList">
+        <item>出勤</item>
+        <item>迟到</item>
+        <item>缺勤</item>
+        <item>请假</item>
+    </string-array>
+    <string name="health">健康管理</string>
+    <string-array name="healthList">
+        <item>健康</item>
+        <item>警示</item>
+        <item>提醒</item>
+    </string-array>
+</resources>

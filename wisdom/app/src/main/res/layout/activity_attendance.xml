@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cnst.wisdom.ui.activity.Attendance">
+
+    <include
+        layout="@layout/head_back"></include>
+
+    <RelativeLayout
+        android:id="@+id/rg_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabHeight"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/center"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@color/underline_gray"></ImageView>
+
+        <RelativeLayout
+            android:id="@+id/rl_pop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/center"
+            android:clickable="true"
+            android:onClick="classChose"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_toggle"
+                android:layout_width="@dimen/marging_8"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tab_arrow_down"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/atten_class"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/head_size"/>
+
+                <TextView
+                    android:id="@+id/tv_sw_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/marging_8"
+                    android:textSize="@dimen/tab_size"
+                    android:text="(小一班)"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="choseDate"
+            android:layout_toRightOf="@+id/center">
+
+            <ImageView
+                android:id="@+id/iv_calendar"
+                android:layout_width="@dimen/calendar"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:padding="3dp"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tab_calendar"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/head_size"/>
+
+                <TextView
+                    android:id="@+id/tv_chose_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/marging_8"
+                    android:textSize="@dimen/tab_size"
+                    android:text="(1月14)"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/vp_attendance"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            tools:listitem="@layout/item_list_recommend"
+            android:scrollbars="none">
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

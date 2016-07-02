@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@android:color/white"
+              android:layout_width="match_parent"
+              android:padding="@dimen/padding_10"
+              android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:text="逻辑数学 第一期"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_marginTop="@dimen/padding_10"
+            android:textColor="@android:color/black"
+            android:text="1、颜色配对"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <Button
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingLeft="@dimen/padding_20"
+        android:paddingRight="@dimen/padding_20"
+        android:text="已完成"
+        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/bg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <Button
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingLeft="@dimen/padding_20"
+        android:paddingRight="@dimen/padding_20"
+        android:text="已完成"
+        android:textColor="@color/colorPrimary"
+        android:background="@mipmap/complete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/headHeight">
+
+    <EditText
+        android:id="@+id/et_query"
+        android:hint="请输入课名"
+        android:background="@drawable/guidance_round_search"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:paddingRight="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headHeight" />
+    <ImageButton
+        android:id="@+id/ibtn_search"
+        android:src="@drawable/pop_search"
+        android:background="@null"
+        android:padding="3dp"
+        android:layout_alignRight="@+id/et_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
